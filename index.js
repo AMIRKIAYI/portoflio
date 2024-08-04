@@ -1,17 +1,17 @@
-// index.js
 document.addEventListener('DOMContentLoaded', () => {
   const menuIcon = document.getElementById('menu-icon');
-  const nav = document.querySelector('nav');
+  const nav = document.getElementById('menu'); // Ensure this is correct
 
   menuIcon.addEventListener('click', () => {
+    console.log('Menu icon clicked'); // Debug log
     nav.classList.toggle('active');
   });
 
-  // Tab switching functionality
   const tablinks = document.getElementsByClassName("tab-links");
   const tabcontents = document.getElementsByClassName("tab-contents");
 
   function opentab(e, tabname) {
+    console.log('Opening tab:', tabname); // Debug log
     for (const tablink of tablinks) {
       tablink.classList.remove("active-link");
     }
@@ -22,6 +22,5 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById(tabname).classList.add("active-tab");
   }
 
-  // Expose opentab function globally if needed
   window.opentab = opentab;
 });

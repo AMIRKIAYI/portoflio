@@ -458,36 +458,43 @@ form .btn2 {
   }
 }
 
-/* Default styles for larger screens */
+/* CSS for the menu */
+#menu {
+  display: flex;
+  list-style-type: none;
+}
+
 .menu-icon {
   display: none; /* Hidden by default */
 }
 
-#menu {
-  display: flex; /* Show menu items by default */
-}
-
 /* Responsive styles */
 @media (max-width: 768px) {
-  .menu-icon {
-    display: block; /* Show menu icon on small screens */
-    font-size: 24px;
-    cursor: pointer;
-  }
-
   #menu {
-    display: none; /* Hide menu items on small screens */
+    display: none; /* Hidden by default */
     flex-direction: column;
     width: 100%;
   }
 
   #menu.active {
-    display: flex; /* Show menu items when active */
+    display: flex; /* Show when active */
   }
 
-  #menu li {
-    width: 100%;
-    text-align: center;
-    margin: 10px 0;
+  .menu-icon {
+    display: block; /* Show the menu icon on small screens */
+    cursor: pointer;
   }
+}
+
+/* Tab content styles */
+.tab-contents {
+  display: none;
+}
+
+.active-tab {
+  display: block;
+}
+
+.tab-links.active-link {
+  font-weight: bold;
 }
