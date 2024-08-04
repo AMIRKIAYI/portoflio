@@ -1,37 +1,27 @@
 // index.js
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
   const menuIcon = document.getElementById('menu-icon');
   const nav = document.querySelector('nav');
 
-  menuIcon.addEventListener('click', function () {
-      nav.classList.toggle('active');
+  menuIcon.addEventListener('click', () => {
+    nav.classList.toggle('active');
   });
-});
 
+  // Tab switching functionality
+  const tablinks = document.getElementsByClassName("tab-links");
+  const tabcontents = document.getElementsByClassName("tab-contents");
 
-
-
-
-
-var tablinks = document.getElementsByClassName("tab-links");
-    let tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(e, tabname) {
-      for (let tablink of tablinks) {
-        tablink.classList.remove("active-link");
-      }
-      for (let tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-      }
-      e.currentTarget.classList.add("active-link");
-      document.getElementById(tabname).classList.add("active-tab");
+  function opentab(e, tabname) {
+    for (const tablink of tablinks) {
+      tablink.classList.remove("active-link");
     }
+    for (const tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+    e.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
 
-// function opentab(tabName) {
-//     var i;
-//     var x = document.getElementsByClassName("tab-contents");
-//     for (i = 0; i < x.length; i++) {
-//       x[i].classList.remove("active-tab");
-//     }
-//     document.getElementById(tabName).classList.add("active-tab");
-//   }
+  // Expose opentab function globally if needed
+  window.opentab = opentab;
+});
