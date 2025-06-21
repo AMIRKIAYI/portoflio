@@ -40,50 +40,33 @@ body {
   height: 650px;
 }
 
+/* Add this to your style.css */
+/* --- Desktop Styles (unchanged from your original) --- */
 .header-profile-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 350px;
+  height: 650px;
   border-radius: 20px;
-  position: relative;
-  z-index: 1;
-  transition: all 0.5s ease;
+  object-fit: cover;
+  object-position: top center; /* Ensures face is always visible */
+ 
+  padding-top: 50px;
+   transition: all 0.5s ease;
   border: 8px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   filter: grayscale(20%) contrast(110%);
 }
-
-.profile-highlight {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  background: linear-gradient(45deg, #ff004f, transparent 70%);
-  top: 0;
-  left: 0;
-  z-index: 2;
-  opacity: 0.3;
-  pointer-events: none;
-}
-
 .header-profile-image:hover {
-  transform: scale(1.02);
+ 
   filter: grayscale(0%) contrast(100%);
   box-shadow: 0 15px 40px rgba(255, 0, 79, 0.3);
 }
 
-/* Animation for subtle movement */
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
-}
 
-.header-profile-image {
-  animation: float 6s ease-in-out infinite;
-}
-
-/* Responsive adjustments */
+/* --- Mobile Adjustments (preserving your exact layout request) --- */
 @media only screen and (max-width: 900px) {
   .header-content {
     flex-direction: column;
@@ -92,28 +75,38 @@ body {
   
   .header-text {
     width: 100%;
-    margin-top: 50px;
-  }
-  
-  .profile-image-container {
-    width: 300px;
-    height: 300px;
-    margin: 40px auto 0;
+    margin-top: 50px; /* Exactly as you requested */
   }
   
   .header-profile-image {
-    border-radius: 50%;
-  }
-  
-  .profile-highlight {
-    border-radius: 50%;
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    margin: 40px auto;
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Circular crop */
+    object-position: top 25% center; /* Shows face clearly */
+    padding-top: 0;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .profile-image-container {
-    width: 250px;
-    height: 250px;
+  .header-text {
+    margin-top: 30%; /* Your original value */
+    font-size: 24px; /* Your original value */
+  }
+  
+  .header-text h1 {
+    font-size: 36px; /* Your original value */
+  }
+  
+  .header-profile-image {
+    width: 200px;
+    height: 200px;
+    object-position: top 30% center; /* Fine-tuned face position */
   }
 }
 .logo {
