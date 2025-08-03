@@ -32,7 +32,7 @@ A responsive portfolio website showcasing my work as a Full Stack Developer with
 - Geolocation-based livestock trading
 - Secure payment gateway integration
 - Real-time messaging system  
-[View Live](https://herder-hub-application.vercel.app/) | [GitHub Repo](https://github.com/AMIRKIAYI/herderhub)
+[View Live](https://herder-hub-application.vercel.app/) | [GitHub Repo](https://github.com/AMIRKIAYI/HerderHub-application)
 
 ### KenyaLivestockConnect
 **Technologies**: React, Flask, MongoDB  
