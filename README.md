@@ -11,20 +11,18 @@ A responsive portfolio website showcasing my work as a Full Stack Developer with
 - **Project Showcase**: Detailed case studies with technology tags and live demos
 - **Responsive Design**: Fully adaptive layout for all device sizes
 - **Interactive Elements**: Animated navigation and hover effects
-- **Contact System**: Functional form with validation
+
 
 ## Technical Architecture
 ### Core Technologies
 - **Frontend**: HTML5, CSS3, JavaScript (ES6+), React
 - **Styling**: CSS Variables, Flexbox, Grid, Tailwind CSS
-- **Backend Integration**: Node.js, Express, Python/Flask
-- **Databases**: MySQL, MongoDB
+
 
 ### Development Tools
 - Version Control: Git/GitHub
 - IDE: VS Code
-- Design: Figma (for UI mockups)
-- Testing: Browser DevTools, Lighthouse
+
 
 ## Project Highlights
 
@@ -43,12 +41,3 @@ A responsive portfolio website showcasing my work as a Full Stack Developer with
 - Advanced filtering system
 - Multilingual support
 
-## Development Approach
-```javascript
-// Theme switching implementation example
-function toggleTheme() {
-  document.body.classList.toggle('light-theme');
-  localStorage.setItem('theme', 
-    document.body.classList.contains('light-theme') ? 'light' : 'dark'
-  );
-}
