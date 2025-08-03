@@ -3,57 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My-PORTFOLIO</title>
+    <title>Amir Osman - Full Stack Developer</title>
+    <meta name="description" content="Professional portfolio of Amir Osman, Software Engineer and Web Developer from Kenya">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/95ca3b6be5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<!-- --------------home section------------- -->
-<div id="header">
-  <div class="container">
-    <nav>
-      <div class="logo">
-        <span class="letter-a">A</span><span class="letter-mir">mir.</span>
-      </div>
-      <div class="menu-icon" id="menu-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      <ul id="menu">
-        <li><a href="#header">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="header-content">
-      <div class="header-text">
-        <p> Software Engineer & UI/UX Designer</p>
-        <h1>Hi, I'm <span>Amir</span><br>Osman from Kenya</h1>
-      </div>
-      <div class="profile-image-container">
-        <img src="images/pro3.jpg" alt="Amir Osman - UI/UX Designer" class="header-profile-image">
-        <div class="profile-highlight"></div>
-      </div>
+    <!-- Dark/Light Mode Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon" id="theme-icon"></i>
     </div>
-  </div>
-</div>
-   <!-- --------------about section------------- -->
 
-  <!-- Update the About Me section -->
+    <!-- --------------home section------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="letter-a">A</span><span class="letter-mir">mir.</span>
+                </div>
+                <div class="menu-icon" id="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul id="menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-divider"></div>
+            <div class="header-content">
+                <div class="header-text">
+                    <p>Full Stack Web Developer</p>
+                    <h1>Hi, I'm <span>Amir</span><br>Osman from Kenya</h1>
+                </div>
+                <div class="profile-image-container">
+                    <img src="images/pro3.jpg" alt="Amir Osman - Web Developer" class="header-profile-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- --------------about section------------- -->
 <div id="about">
   <div class="container">
     <div class="row">
       <div class="about-col-1">
-        <img src="images/pro.png" alt="Amir Osman - UI/UX Designer">
+        <img src="images/pro.png" alt="Amir Osman - Web Developer" class="about-profile-image">
       </div>
       <div class="about-col-2">
         <h1 class="sub-title">About Me</h1>
-        <p>I'm Amir, a certified Software Engineer and UI/UX designer with a passion for creating 
-           intuitive digital experiences. I recently graduated from EmpowerWithIT's intensive 
-           Software Engineering program in Garissa, complementing my design skills with strong 
-           technical expertise. My background in education gives me unique insights into creating 
-           user-friendly interfaces for diverse audiences.</p>
+        <p>I'm Amir, a passionate web developer with expertise in full-stack web development. I specialize in building modern, responsive web applications with clean code and intuitive user interfaces.</p>
+        
+        <div class="passion-section">
+          <h3>My Development Approach</h3>
+          <p>I focus on creating efficient, scalable web applications that deliver exceptional user experiences. My background helps me build solutions that are accessible to diverse users across different platforms.</p>
+        </div>
         
         <div class="tab-titles">
           <p class="tab-links active-link" onclick="opentab(event, 'skills')"><strong>Skills</strong></p>
@@ -63,30 +70,24 @@
         
         <div class="tab-contents active-tab" id="skills">
           <ul>
-            <li><span>UI/UX Design</span><br>Designing Web/App Interfaces</li>
-            <li><span>Frontend Development</span><br>React, JavaScript, HTML/CSS</li>
-            <li><span>Backend Development</span><br>Node.js, Python, Databases</li>
+            <li><span>Frontend</span><br>HTML, CSS, JavaScript, React, Bootstrap, Tailwind</li>
+            <li><span>Backend</span><br>Node.js, Python, Flask</li>
+            <li><span>Databases</span><br>MySQL, MongoDB</li>
           </ul>
         </div>
         
         <div class="tab-contents" id="experience">
           <ul>
-            <li><span>2024 - Current</span><br>Software Engineer & UI/UX Designer</li>
-            <li><span>2023 - 2024</span><br>Software Engineering Training at EmpowerWithIT</li>
+            <li><span>2024 - Current</span><br>Full Stack Developer</li>
+            <li><span>2023 - 2024</span><br>Software Engineering Training</li>
             <li><span>2023 - 2024</span><br>Team Lead at Humanity First Group</li>
           </ul>
         </div>
         
         <div class="tab-contents" id="education">
           <ul>
-            <li><span>2023 - 2024</span><br>Certificate in Software Engineering<br>
-                Institution: EmpowerWithIT Bootcamp<br>
-                Location: Garissa, Kenya<br>
-                Key Skills: Full-stack development, UI/UX principles</li>
-                
-            <li><span>2023 - 2027</span><br>Bachelor of Education (Science)<br>
-                University: Garissa University</li>
-                
+            <li><span>2023 - 2024</span><br>Certificate in Software Engineering</li>
+            <li><span>2023 - 2027</span><br>Bachelor of Education (Science)</li>
             <li><span>2019 - 2022</span><br>KCSE - Hola Boys Secondary School</li>
           </ul>
         </div>
@@ -95,47 +96,90 @@
   </div>
 </div>
 
-<!-- Update Services section to reflect new skills -->
-<div id="services">
+<!-- --------------skills section------------- -->
+<div id="skills">
   <div class="container">
-    <h1 class="sub-title">My Services</h1>
-    <div class="services-list">
-      <div>
-        <i class="fa-solid fa-laptop-code"></i>
-        <h2>Full-stack Development</h2>
-        <p>Building complete web applications with modern frameworks and databases.</p>
-        <a href="#">Learn more</a>
+    <h1 class="sub-title">Technical Skills</h1>
+    <div class="skills-container">
+      <div class="skill-category">
+        <h3>Frontend</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fab fa-html5"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-js-square"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-react"></i>
+            <span>React</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-bootstrap"></i>
+            <span>Bootstrap</span>
+          </div>
+            <div class="skill-item">
+            <svg class="skill-icon" viewBox="0 0 128 128"><path fill="#38BDF8" d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"/></svg>
+            <span>Tailwind</span>
+          </div>
+        </div>
       </div>
-      <div>
-        <i class="fa-solid fa-crop-simple"></i>
-        <h2>UI/UX Design</h2>
-        <p>Creating user-centered interfaces with strong visual design principles.</p>
-        <a href="#">Learn more</a>
+      
+      <div class="skill-category">
+        <h3>Backend</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-flask"></i>
+            <span>Flask</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-node-js"></i>
+            <span>Node.js</span>
+          </div>
+        </div>
       </div>
-      <div>
-        <i class="fa-solid fa-mobile-screen"></i>
-        <h2>Mobile Development</h2>
-        <p>Developing cross-platform mobile applications with responsive design.</p>
-        <a href="#">Learn more</a>
+      
+      <div class="skill-category">
+        <h3>Databases</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fas fa-database"></i>
+            <span>MySQL</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-leaf"></i>
+            <span>MongoDB</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
-<!-- --------------------portfolio------------------------ -->
+
+<!-- --------------portfolio section------------- -->
 <div id="portfolio">
   <div class="container">
-    <h1 class="sub-title">My Work</h1>
+    <h1 class="sub-title">My Projects</h1>
     <div class="work-list">
       <div class="work featured-work">
-        <img src="/images/herderhub.jpg" alt="HerderHub Livestock Marketplace">
+        <img src="images/herderhub.jpg" alt="HerderHub Livestock Marketplace">
         <div class="layer">
           <h3>HerderHub</h3>
-          <p>A livestock marketplace solving Northern Kenya's trading challenges by connecting local herders directly with buyers nationwide.</p>
+          <p>A full-stack livestock marketplace built with React, Node.js and MySQL, solving Northern Kenya's trading challenges.</p>
           <div class="project-links">
             <a href="https://herder-hub-application.vercel.app/" target="_blank" title="Live Demo">
               <i class="fas fa-external-link-alt"></i>
             </a>
-           
           </div>
           <span class="tech-badge">React</span>
           <span class="tech-badge">Node.js</span>
@@ -143,19 +187,25 @@
         </div>
       </div>
       <div class="work">
-        <img src="/images/image4.png" alt="KenyaLivestockConnect App">
+        <img src="images/image4.png" alt="KenyaLivestockConnect App">
         <div class="layer">
           <h3>KenyaLivestockConnect</h3>
-          <p>Global livestock trading platform connecting Kenyan farmers with international buyers.</p>
-          <a href="#" class="project-link"><i class="fa-solid fa-up-right-from-square"></i></a>
+          <p>Livestock trading platform connecting Kenyan farmers with international buyers.</p>
+          <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+          <span class="tech-badge">React</span>
+          <span class="tech-badge">Flask</span>
+          <span class="tech-badge">MongoDB</span>
         </div>
       </div>
       <div class="work">
-        <img src="/images/image99.png" alt="Rollcall App">
+        <img src="images/image99.png" alt="Rollcall App">
         <div class="layer">
           <h3>Rollcall App</h3>
           <p>Digital attendance system for educators with 90% time savings.</p>
-          <a href="#" class="project-link"><i class="fa-solid fa-up-right-from-square"></i></a>
+          <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+          <span class="tech-badge">JavaScript</span>
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">MySQL</span>
         </div>
       </div>
     </div>
@@ -163,41 +213,103 @@
   </div>
 </div>
 
-     <!-- --------------contact-------------------------- -->
-
-     <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h2 class="sub-title">Contact Me</h2>
-            <p><i class="fa-regular fa-envelope"></i>amirjuma036@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i>254740403144</p>
-            <div class="social-icons">
-              <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
-              <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/amir-kiayi-33990a30b/"><i class="fa-brands fa-linkedin"></i></a>
-              
-            </div>
-            <a href="images/MyNewCV.pdf" download class="btn btn2">Download CV</a>
-          </div>
-          <div class="contact-right">
-            <form>
-              <input type="text" name="Name" placeholder="Your Name" required>
-              <input type="email" name="Email" placeholder="Your Email" required>
-              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-          </div>
+<!-- --------------contact section------------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h2 class="sub-title">Contact Me</h2>
+        <p><i class="fas fa-envelope"></i> amirjuma036@gmail.com</p>
+        <p><i class="fas fa-phone"></i> 254740403144</p>
+        <div class="social-icons">
+          <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/amir-kiayi-33990a30b/"><i class="fab fa-linkedin"></i></a>
         </div>
+        <a href="/Amir_Osman_CV(1).pdf" download class="btn btn2">Download CV</a>
       </div>
-      <div class="copyright">
-        <p>© 2024 Amir Osman<i class="fa-solid fa-heart"></i>. All rights reserved.</p>
+      <div class="contact-right">
+        <form id="contact-form">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
       </div>
-     </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>© 2024 Amir Osman. All rights reserved.</p>
+  </div>
+</div>
 
+<script>
+  // Form submission handler
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(this);
+    const data = Object.fromEntries(formData);
+    
+    // Here you would typically send the data to a server
+    console.log('Form submitted:', data);
+    alert('Thank you for your message! I will get back to you soon.');
+    this.reset();
+  });
 
-   
- <script src="/index.js"></script>
+  // Tab functionality
+  function opentab(evt, tabName) {
+    const tabcontents = document.getElementsByClassName("tab-contents");
+    for (let tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+    
+    const tablinks = document.getElementsByClassName("tab-links");
+    for (let tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+    
+    document.getElementById(tabName).classList.add("active-tab");
+    evt.currentTarget.classList.add("active-link");
+  }
+
+  // Mobile menu toggle
+  document.getElementById('menu-icon').addEventListener('click', function() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+  });
+  
+  // Theme toggle functionality
+  const themeToggle = document.querySelector('.theme-toggle');
+  const themeIcon = document.getElementById('theme-icon');
+  const body = document.body;
+  
+  // Check for saved theme preference or use preferred color scheme
+  const currentTheme = localStorage.getItem('theme') || 
+                      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  body.classList.add(currentTheme + '-theme');
+  updateIcon(currentTheme);
+  
+  themeToggle.addEventListener('click', () => {
+      if (body.classList.contains('dark-theme')) {
+          body.classList.replace('dark-theme', 'light-theme');
+          localStorage.setItem('theme', 'light');
+          updateIcon('light');
+      } else {
+          body.classList.replace('light-theme', 'dark-theme');
+          localStorage.setItem('theme', 'dark');
+          updateIcon('dark');
+      }
+  });
+  
+  function updateIcon(theme) {
+      if (theme === 'dark') {
+          themeIcon.classList.replace('fa-sun', 'fa-moon');
+      } else {
+          themeIcon.classList.replace('fa-moon', 'fa-sun');
+      }
+  }
+</script>
 </body>
 </html>
