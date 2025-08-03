@@ -1,81 +1,54 @@
-# Amir Osman - Full Stack Developer Portfolio
+# Amir Osman - Professional Portfolio
 
-<div align="center">
-  <img src="./images/screenshot.png" alt="Portfolio Screenshot" width="800">
-</div>
+[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://amirosmankiayi.netlify.app)
 
-## 🚀 Features
-- **Dark/Light Mode Toggle** - Persistent theme preference
-- **Fully Responsive** - Mobile-first design
-- **Interactive Projects** - Hover effects and live demos
-- **Modern UI** - Clean animations and transitions
-- **Contact Form** - With client-side validation
+## Professional Overview
+A responsive portfolio website showcasing my work as a Full Stack Developer with expertise in React, Node.js, and database solutions. The site demonstrates both technical skills and design sensibility through interactive elements and clean aesthetics.
 
-## 🛠 Tech Stack
-| Frontend          | Backend         | Tools            |
-|-------------------|-----------------|------------------|
-| HTML5            | Node.js        | Git              |
-| CSS3             | Express        | GitHub           |
-| JavaScript       | Python         | VS Code          |
-| React            | Flask          | Figma            |
-| Tailwind CSS     | MySQL          | Postman          |
+## Key Features
+- **Dual Theme System**: Professional dark/light mode with localStorage persistence
+- **Project Showcase**: Detailed case studies with technology tags and live demos
+- **Responsive Design**: Fully adaptive layout for all device sizes
+- **Interactive Elements**: Animated navigation and hover effects
+- **Contact System**: Functional form with validation
 
-## 📌 Quick Start
-1. Clone the repo:
-```bash
-git clone https://github.com/AMIRKIAYI/portfolio.git
-```
-2. Open `index.html` in browser
+## Technical Architecture
+### Core Technologies
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+), React
+- **Styling**: CSS Variables, Flexbox, Grid, Tailwind CSS
+- **Backend Integration**: Node.js, Express, Python/Flask
+- **Databases**: MySQL, MongoDB
 
-## 🎨 Design System
-```css
-:root {
-  /* Dark Theme */
-  --dark-bg: #080808;
-  --dark-highlight: #ff004f;
-  
-  /* Light Theme */ 
-  --light-bg: #f5f5f5;
-  --light-highlight: #e63946;
-}
-```
+### Development Tools
+- Version Control: Git/GitHub
+- IDE: VS Code
+- Design: Figma (for UI mockups)
+- Testing: Browser DevTools, Lighthouse
 
-## 🌟 Highlighted Projects
+## Project Highlights
 
-### HerderHub - Livestock Marketplace
-[![Live Demo](https://img.shields.io/badge/Live_Demo-HerderHub-brightgreen)](https://herder-hub-application.vercel.app/)
-```
-Technologies: React, Node.js, MySQL
-Features:
-✓ Real-time messaging 
-✓ Payment integration
-✓ Geolocation services
-```
+### HerderHub Marketplace
+**Technologies**: React, Node.js, MySQL  
+**Key Features**:
+- Geolocation-based livestock trading
+- Secure payment gateway integration
+- Real-time messaging system  
+[View Live](https://herder-hub-application.vercel.app/) | [GitHub Repo](https://github.com/AMIRKIAYI/herderhub)
 
 ### KenyaLivestockConnect
-```
-Technologies: React, Flask, MongoDB
-Features:
-✓ International trade platform
-✓ Advanced search filters
-✓ B2B marketplace
-```
+**Technologies**: React, Flask, MongoDB  
+**Key Features**:
+- International trade platform
+- Advanced filtering system
+- Multilingual support
 
-## 📞 Contact
-<p align="center">
-  <a href="mailto:amirjuma036@gmail.com">
-    <img src="https://img.shields.io/badge/Email-amirjuma036%40gmail.com-red" alt="Email">
-  </a>
-  <a href="https://linkedin.com/in/amir-kiayi-33990a30b">
-    <img src="https://img.shields.io/badge/LinkedIn-Amir%20Osman-blue" alt="LinkedIn">
-  </a>
-  <a href="tel:+254740403144">
-    <img src="https://img.shields.io/badge/Phone-%2B254740403144-green" alt="Phone">
-  </a>
-</p>
-
----
-
-<div align="center">
-  © 2024 Amir Osman | All Rights Reserved
-</div>
+## Development Approach
+```javascript
+// Theme switching implementation example
+function toggleTheme() {
+  document.body.classList.toggle('light-theme');
+  localStorage.setItem('theme', 
+    document.body.classList.contains('light-theme') ? 'light' : 'dark'
+  );
+}
